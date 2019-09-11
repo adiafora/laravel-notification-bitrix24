@@ -28,27 +28,21 @@ class Bitrix24
      */
     public function __construct()
     {
-        try {
-            $this->token = config('bitrix24_notice.token');
+        $this->token = config('bitrix24_notice.token');
 
-        } catch (\Exception $e) {
-
+        if (empty($this->token)) {
             throw new ApiBitrix24Exception('Not found token in the config/bitrix24_notice');
         }
 
-        try {
-            $this->fromUserId = (int)config('bitrix24_notice.fromUserId');
+        $this->fromUserId = (int)config('bitrix24_notice.fromUserId');
 
-        } catch (\Exception $e) {
-
+        if (empty($this->fromUserId)) {
             throw new ApiBitrix24Exception('Not found fromUserId in the config/bitrix24_notice');
         }
 
-        try {
-            $this->domain = config('bitrix24_notice.domain');
+        $this->domain = config('bitrix24_notice.domain');
 
-        } catch (\Exception $e) {
-
+        if (empty($this->domain)) {
             throw new ApiBitrix24Exception('Not found domain in the config/bitrix24_notice');
         }
     }
