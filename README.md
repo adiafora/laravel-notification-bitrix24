@@ -23,9 +23,11 @@ Laravel Notification to Bitrix24
 Конфигурация
 -----------------------------------
 
-После установки, выполните в консоли команду публикации файла конфигурации. 
+После установки, выполните в консоли команду публикации файла конфигурации: 
 
-`php artisan vendor:publish --provider="Adiafora\Bitrix24\Bitrix24ServiceProvider"`
+```php
+    php artisan vendor:publish --provider="Adiafora\Bitrix24\Bitrix24ServiceProvider"`
+```
 
 В нем Вы обязательно должны  заполнить все поля, описанные выше, иначе уведомления не будут работать.
 
