@@ -1,0 +1,31 @@
+{
+  "name": "adiafora/laravel-notification-bitrix24",
+  "description": "Package for Laravel notification to Bitrix24",
+  "keywords": ["laravel", "Bitrix24", "notification"],
+  "type": "package",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Zhidkov",
+      "email": "zhidkoff@list.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.4.*|5.5.*|5.6.*"
+  },
+  "version": "1.0",
+  "autoload": {
+    "classmap": [],
+    "psr-4": {
+      "Adiafora\\Bitrix24\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Adiafora\\Bitrix24\\Bitrix24ServiceProvider"
+      ]
+    }
+  }
+}
