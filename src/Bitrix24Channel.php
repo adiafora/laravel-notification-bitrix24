@@ -20,7 +20,7 @@ class Bitrix24Channel
     {
         $message = $notification->toBitrix24($notifiable);
 
-        if (!is_numeric($notifiable)) {
+        if (is_object($notifiable)) {
             $notifiable = $notifiable->routeNotificationFor('bitrix24');
         }
 
