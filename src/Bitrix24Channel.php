@@ -2,7 +2,7 @@
 
 namespace Adiafora\Bitrix24;
 
-use Adiafora\Api\Bitrix24\Bitrix24;
+use Adiafora\Bitrix24\Api\Bitrix24;
 use Adiafora\Bitrix24\Exceptions\NoticeBitrix24Exception;
 use Illuminate\Notifications\Notification;
 

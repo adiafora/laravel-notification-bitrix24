@@ -1,6 +1,6 @@
 <?php
 
-namespace Adiafora\Api\Bitrix24;
+namespace Adiafora\Bitrix24\Api;
 
 use Adiafora\Bitrix24\Exceptions\ApiBitrix24Exception;
 
