@@ -50,7 +50,7 @@ class Bitrix24
     /**
      * Подготовка и выполнение запроса к API Битрикс24
      *
-     * @param $params array
+     * @param array $params
      * @return mixed
      * @throws ApiBitrix24Exception
      */
@@ -88,7 +88,7 @@ class Bitrix24
      * @return string
      *
      */
-    private function geuUrlForSend()
+    private function geuUrlForSend(): string
     {
         return 'https://' . $this->domain . '.bitrix24.ru/rest/' . $this->fromUserId . '/' . $this->token . '/im.message.add.json';
     }

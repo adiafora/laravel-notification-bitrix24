@@ -9,6 +9,20 @@ use Illuminate\Notifications\Notification;
 class Bitrix24Channel
 {
     /**
+     * @var Bitrix24
+     */
+    protected $bitrix24;
+
+    /**
+     * Bitrix24Channel constructor.
+     * @param Bitrix24 $bitrix24
+     */
+    public function __construct(Bitrix24 $bitrix24)
+    {
+        $this->bitrix24 = $bitrix24;
+    }
+
+    /**
      * Send the given notification.
      *
      * @param  mixed  $notifiable
@@ -39,7 +53,6 @@ class Bitrix24Channel
             'MESSAGE' => $message->message
         ];
 
-        $bitrix = new Bitrix24();
-        $bitrix->send($params);
+        $this->bitrix24->send($params);
     }
 }
