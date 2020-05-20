@@ -9,7 +9,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Feature">
+        <testsuite name="Bitrix24 Channel Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
